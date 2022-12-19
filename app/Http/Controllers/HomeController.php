@@ -15,7 +15,7 @@ class HomeController extends Controller
         $drivers = ['John Sigono', 'Tom Davidson'];
 
         $expenses = $this->generateTestExpenses();
-        $eachTotal = [];
+        $soloTotal = [];
 
         return view('home', [
             'data' => $driverExpenseService->calculateDriverExpenses($drivers, $expenses),
